@@ -1,0 +1,98 @@
+.wrap .left{
+    width: 400px;
+    background-color: #73c0d8;
+}
+
+.pharmacy{
+    height:150px;
+    background-color: white;
+    font-size: 18px;
+    padding:20px;
+   
+    
+}
+
+#timey{
+    font-size:12px;
+}
+.pharmacy p{
+    margin-bottom: 10px;
+}
+.inside{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    font-size:15px;
+}
+
+.insidepharmacy{
+    overflow-x:hidden;
+    overflow:scroll;
+    height:617px;
+    
+}
+.capsule {
+    width: 180px;
+    height: 30px;
+    background: #317ef3;
+    border-radius: 50px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+#adult{
+    background-color:#73c0d8 ;
+}
+#child{
+    background-color:#ffa573
+}
+
+.wrap hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color:white;
+    height:1px;
+    color:#e0e0d4;
+    border:0px;
+}
+
+
+
+.marker-cluster-small {
+background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div {
+background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div {
+background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+background-color: rgba(241, 128, 23, 0.6);
+}
+
+.marker-cluster {
+background-clip: padding-box;
+border-radius: 20px;
+}
+.marker-cluster div {
+width: 30px;
+height: 30px;
+margin-left: 5px;
+margin-top: 5px;
+
+text-align: center;
+border-radius: 15px;
+font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.marker-cluster span {
+line-height: 30px;
+}

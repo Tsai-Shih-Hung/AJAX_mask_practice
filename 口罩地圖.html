@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <link rel="stylesheet" href="口罩地圖.css">
+    <link rel="stylesheet" href="MarkerCluster.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="moment.js"></script>
+    <script src="leaflet.markercluster.js"></script>
+
+
+    <style>
+        #map {
+            height: 745px;
+            width: 1100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrap" style="display: flex;flex-direction: row;" >
+        <div class="left">
+            <div style="display: flex;justify-content:space-between ;color:white;padding:15px">
+                <div class="time" style="font-size: 30px;"></div>
+
+                <div class="day"></div>
+            </div>
+            <div class="quality" style="text-align: right;padding-right: 3px;margin-bottom: 10px;"></div>
+            <form style="margin-left: 30px;padding:10px;">
+
+                <select id="county" style="width:90%;border:0px;height:30px">
+                    <option value="臺北市">--請選擇縣市--</option>
+                    <option value="臺北市">臺北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="臺中市">臺中市</option>
+                    <option value="臺南市">臺南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="嘉義市">嘉義市</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="臺東縣">臺東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                </select>
+            </form>
+            <div class="insidepharmacy">
+                <div class="pharmacy">
+                    <p id="name">32</p>
+                    <p id="address">321</p>
+                    <p id="phone">321</p>
+                    <p id="timey">312</p>
+                    <div class="inside">
+                        <p id="adult" class="capsule">成人口罩312</p>
+                        <p id="child" class="capsule">成人口罩312</p>
+                    </div>
+
+                </div>
+                <hr style="z-index: 3;">
+                <div class="pharmacy">
+                    <p id="name">32</p>
+                    <p id="address">321</p>
+                    <p id="phone">321</p>
+                    <p id="timey">312</p>
+                    <div class="inside">
+                        <p id="adult" class="capsule">成人口罩312</p>
+                        <p id="child" class="capsule">成人口罩312</p>
+                    </div>
+
+                </div>
+                <hr style="z-index: 3;">
+            </div>
+        </div>
+
+    
+        <div id="map" class="right"></div>
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="口罩地圖.js"></script>
+
+
+
+</body>
+
+</html>
